@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /api/v1/fast-food
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+#    show-sql: true
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/fastfood_database
+    username: springuser
+    password: SpringAppPass
+    driver-class-name: org.postgresql.Driver
