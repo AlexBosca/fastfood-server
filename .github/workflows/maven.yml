@@ -32,12 +32,12 @@ jobs:
     - name: Run TestContainers with Doocker
       uses: addnab/docker-run-action@v3
       with:
-        image: docker://testcontainers/ryuk:0.3.3
+        image: testcontainers/ryuk:0.3.3
         
     - name: Run Postgres for TestContainers with Doocker
       uses: addnab/docker-run-action@v3
       with:
-        image: docker://postgres:latest
+        image: postgres:latest
     
     - name: Build with Maven
       run: mvn clean install
